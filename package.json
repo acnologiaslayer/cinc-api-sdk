@@ -1,0 +1,47 @@
+{
+  "name": "@cinc/api-sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for CINC API interactions - authentication, asset management, market data, and portfolio management",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.10.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.3.0"
+  },
+  "author": "Mahir Musleh",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acnologiaslayer/cinc-api-sdk.git"
+  },
+  "keywords": [
+    "cinc",
+    "api",
+    "sdk",
+    "typescript",
+    "real-estate",
+    "property-management",
+    "asset-management",
+    "portfolio-management"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

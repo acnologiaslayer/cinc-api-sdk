@@ -1,0 +1,44 @@
+# Source code
+src/
+tsconfig.json
+
+# Development files
+src/app.ts
+src/controllers/
+src/routes/
+src/middleware/
+
+# Tests
+**/*.test.ts
+**/*.spec.ts
+tests/
+
+# Build tools
+.eslintrc*
+.prettierrc*
+
+# Environment
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+tmp/
+temp/
