@@ -30,6 +30,9 @@ logs
 .env.test.local
 .env.production.local
 
+# NPM configuration (may contain tokens)
+.npmrc.local
+
 # IDE files
 .vscode/
 .idea/

@@ -1,5 +1,5 @@
 {
-  "name": "@cinc/api-sdk",
+  "name": "@acnologiaslayer/cinc-api-sdk",
   "version": "1.0.0",
   "description": "TypeScript SDK for CINC API interactions - authentication, asset management, market data, and portfolio management",
   "main": "lib/index.js",
@@ -7,6 +7,9 @@
   "files": [
     "lib/**/*"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build",

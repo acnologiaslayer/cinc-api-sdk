@@ -15,14 +15,36 @@ A modern TypeScript SDK for integrating with the CINC API. This SDK provides a c
 
 ## Installation
 
-```bash
-npm install @cinc/api-sdk
-```
+### From GitHub Packages
+
+1. **Configure npm to use GitHub Packages** (one-time setup):
+   ```bash
+   # Create or update .npmrc in your project
+   echo "@acnologiaslayer:registry=https://npm.pkg.github.com" >> .npmrc
+   ```
+
+2. **Authenticate with GitHub Packages**:
+   ```bash
+   npm login --scope=@acnologiaslayer --registry=https://npm.pkg.github.com
+   # Use your GitHub username and personal access token as password
+   ```
+
+3. **Install the package**:
+   ```bash
+   npm install @acnologiaslayer/cinc-api-sdk
+   ```
+
+### Personal Access Token Setup
+
+You'll need a GitHub Personal Access Token with `read:packages` scope:
+1. Go to GitHub Settings > Developer settings > Personal access tokens
+2. Generate a new token with `read:packages` scope
+3. Use this token as your password when running `npm login`
 
 ## Quick Start
 
 ```typescript
-import { CincAPIClient } from '@cinc/api-sdk';
+import { CincAPIClient } from '@acnologiaslayer/cinc-api-sdk';
 
 // Initialize the client
 const client = new CincAPIClient({
@@ -144,7 +166,7 @@ import {
   ValidationError, 
   RateLimitError, 
   ServerError 
-} from '@cinc/api-sdk';
+} from '@acnologiaslayer/cinc-api-sdk';
 
 try {
   const data = await client.assets.getAssets();

@@ -31,6 +31,11 @@ npx tsc examples/basic-usage.ts --outDir examples/dist
 node examples/dist/basic-usage.js
 ```
 
+**Note**: This example uses the local build (`../lib/index.js`). When installing from GitHub Packages, you would import:
+```typescript
+import { CincAPIClient } from '@acnologiaslayer/cinc-api-sdk';
+```
+
 ### Environment Variables
 
 For testing with real API credentials, set these environment variables:
@@ -114,7 +119,9 @@ When you run the basic example, you should see output similar to:
 ## Creating Your Own Examples
 
 1. Create a new `.ts` file in this directory
-2. Import the SDK: `import { CincAPIClient } from '../lib/index.js';`
+2. Import the SDK: 
+   - For local development: `import { CincAPIClient } from '../lib/index.js';`
+   - For installed package: `import { CincAPIClient } from '@acnologiaslayer/cinc-api-sdk';`
 3. Initialize the client and test your use case
 4. Run with: `npx ts-node examples/your-example.ts`
 

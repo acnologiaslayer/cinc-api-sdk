@@ -5,6 +5,9 @@ import { CincAPIClient } from '../lib/index.js';
  * 
  * This file demonstrates how to use the SDK after cloning and building it.
  * Run this with: npx ts-node examples/basic-usage.ts
+ * 
+ * For projects installing from GitHub Packages:
+ * import { CincAPIClient } from '@acnologiaslayer/cinc-api-sdk';
  */
 
 async function main() {
